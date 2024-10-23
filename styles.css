@@ -131,9 +131,22 @@ body.dark-mode footer {
 
 
 body.dark-mode .icon-link{
-  color: white;
+  color: rgb(71, 74, 255);
   
 }
+
+body.dark-mode .icon-link1{
+  color: rgb(83, 83, 107);
+  
+}
+
+body.dark-mode .icon-link1:hover{
+  color: rgb(24, 24, 179);
+  
+}
+
+
+
 
 body.dark-mode .logos{
   background-color: #d6d6d600;
@@ -269,11 +282,12 @@ body.dark-mode .logos:before {
 }
 
 .hero-image {
-  margin-top: -200px;
+  
   flex: 1;
   max-width: 50%;
   padding-right: 11rem;
-  scale: 0.6;
+  
+  
 }
 
 .hero-image img {
@@ -309,8 +323,8 @@ body.dark-mode .logos:before {
 }
 
 .icon-link {
-  font-size: rem;
-  color: #333;
+  font-size: 3rem;
+  color: #000000;
   margin-right: 1rem;
   transition: color 0.3s ease;
   padding-left: 70px;
@@ -349,7 +363,13 @@ body.dark-mode .logos:before {
     flex-direction: column;
   }
 
-  .hero-image,
+  .hero-image{
+    max-width: 50%;
+    padding-right: 0;
+  }
+
+
+
   .hero-text {
     max-width: 100%;
     padding-right: 0;
@@ -426,6 +446,8 @@ section h2 {
 
 .logos:hover .logos-slide {
   animation-play-state: paused;
+  
+  
 }
 
 .logos-slide {
@@ -576,7 +598,22 @@ section h2 {
 }
 
 .project-item:hover {
-  transform: translateY(-5px);
+  transform: translateY(-20px);
+  border: 5px solid #072dff;
+  border-radius: 3px;
+  transition: 0.5s
+
+  
+}
+
+
+.project-icon{
+  font-size: 2rem;
+  padding: 10px;
+}
+
+body.dark-mode .project-icon{
+  color: white;
 }
 
 /* Contact Section */
@@ -591,14 +628,20 @@ section h2 {
 .contact textarea {
   margin-bottom: 1rem;
   padding: 0.8rem;
-  border: 1px solid #ddd;
+  border: 1px solid #686969;
+  
   border-radius: 5px;
+  resize: none;
+}
+
+.contact textarea p{
+  color: #000;
 }
 
 .contact button {
   padding: 0.8rem;
   background-color: #007bff;
-  color: #fff;
+  color: #ffffff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
