@@ -79,12 +79,12 @@ body.dark-mode .icon-link{
 }
 
 body.dark-mode .icon-link1{
-  color: rgb(83, 83, 107);
+  color: rgb(167, 197, 255);
   
 }
 
 body.dark-mode .icon-link1:hover{
-  color: rgb(24, 24, 179);
+  color: rgb(255, 255, 255);
   
 }
 
@@ -398,6 +398,7 @@ body.dark-mode .logos:before {
 /* Sections */
 section {
   padding: 5rem 10%;
+  box-shadow: 1px 2px 4px rgba(0,0,0,0.1);
 }
 
 section h2 {
@@ -414,8 +415,10 @@ section h3 {
 
 /* About Section */
 .about p {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
+  font-size: 1rem;
+
 }
 
 @keyframes slide {
@@ -442,7 +445,7 @@ section h3 {
   padding: 10px;
   align-items: center; /* Center items horizontally */
   justify-content: center; /* Center items vertically */
-  
+ 
   
  
 }
@@ -515,10 +518,29 @@ section h3 {
   height: 25px;
   right: -17px;
   background-color: #fff;
-  border: 4px solid #007bff;
+  border: 4px solid #ff7b00;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
+}
+
+
+.dark-mode .timeline-item::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: #5a5757;
+  border: 4px solid #ff7b00;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline-content:hover{
+  transition: transform 0.3s ease;
+  transform: translateX(-10px);
 }
 
 .timeline-item:nth-child(even) {
@@ -535,6 +557,10 @@ section h3 {
   position: relative;
   border-radius: 6px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; /* To center the text within the content */
 }
 
 /* Projects Section */
